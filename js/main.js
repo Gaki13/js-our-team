@@ -19,6 +19,29 @@ const cards = [
     {
         Name: "Angela Lopez",
         role: "Social Media Manager",
-        img: src="img/angela-social-media-manager.jpg",
+        img: src="img/angela-lopez-social-media-manager.jpg",
     },
 ];
+
+
+// 2.Aggiungo gli oggetti dell'array nell'html
+const teamContainer = document.querySelector(".team-container");
+
+for(let i = 0; i < cards.length; i++){
+    const card = `
+        <div class="team-card">
+            <div class="card-image">
+            <img
+                src=${cards[i].img}
+                alt="Wayne Barnett"
+            />
+            </div>
+            <div class="card-text">
+            <h3>${cards[i].Name}</h3>
+            <p>${cards[i].role}</p>
+            </div>
+        </div> 
+    `;
+
+  teamContainer.innerHTML += card;
+};
