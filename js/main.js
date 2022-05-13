@@ -33,7 +33,7 @@ for(let i = 0; i < cards.length; i++){
             <div class="card-image">
             <img
                 src=${cards[i].img}
-                alt="Wayne Barnett"
+                alt=${cards[i].Name}
             />
             </div>
             <div class="card-text">
